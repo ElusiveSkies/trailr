@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Info</title>
+  <!-- Linking Materialize Icons Library -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- Linking Materialize CSS Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+  <!-- Linking custom CSS stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="navbar-fixed" id="navbarContainer">
+    <nav id="navbar">
+      <div class="nav-wrapper valign-wrapper">
+        <a href="./" class="brand-logo center">Trail<span id="titleR">r</a>
+        <ul id="navButtons" class="left">
+
+          <!-- Back to results page -->
+          <li id="backToResultsButton"><a>Back to Results</a></li>
+
+          <!-- To the about page -->
+          <li class="hide-on-small-and-down"><a href="./about.html">About Us</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  <div class="container" id="movieContainer">
+    <div class="row center-align valign-wrapper" id="posterTitleRow">
+
+      <!-- Movie poster -->
+      <div class="col s12 l3 center-align" id="posterColumn">
+        <img id="poster" class="responsive-img" src="" class="z-depth-1" />
+      </div>
+
+      <!-- Movie title and IMDB rating -->
+      <div class="col s12 l8 left-align center" id="infoColumn">
+        <div class="row valign-wrapper center-align">
+          <h3 class="col s9" id="title"></h3>
+          <div class="card left-align" id="rating-card">
+            <h4 class="card-title col s3" id="rating"></h4>
+          </div>
+        </div>
+
+        <!-- Movie info beneath Title -->
+        <div class="center">
+          <h5 id="movie-info"></h5>
+          <h6 id="movie-actors"></h6>
+          <div id="streaming-services">
+            <a id="netflix" class="waves-effect waves-light">
+              <img height="40px" src="./assets/images/netflix_icon.png" />
+            </a>
+            <a id="imdb" class="waves-effect waves-light"><img height="40px" src="./assets/images/imdb_icon.png" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Youtube trailer inserted here -->
+    <div class="row center-align" id="trailerContainer">
+      <div class="center" id="player"></div>
+    </div>
+
+    <!-- Extra movie info displayed beneath YouTube trailer -->
+    <div class="row left-align" id="infoRow">
+      <h4 class="col s12">Movie Info</h4>
+
+      <!-- Plot info -->
+      <div class="row center-align" id="plotRow">
+        <h5>Plot:</h5>
+        <h6 id="movie-summary" class="row card"></h6>
+      </div>
+
+      <!-- Extra movie info -->
+      <div class="row left-align">
+        <div class="">
+          <h6 id="info-rating"></h6>
+          <h6 id="info-genre"></h6>
+          <h6 id="info-director"></h6>
+          <h6 id="info-writer"></h6>
+          <h6 id="info-language"></h6>
+          <h6 id="info-released"></h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Trail<span id="titleR">r</h5>
+        <p class="grey-text text-lighten-4">
+          Your next movie hunt starts here!
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Contributors</h5>
+        <ul>
+          <li>
+            <a target="_blank" class="grey-text text-lighten-3" href="https://github.com/WillBerner">Will Berner</a>
+          </li>
+          <li>
+            <a target="_blank" class="grey-text text-lighten-3" href="https://github.com/Muiasar-Al-Ani">Muiasar Al
+              Ani</a>
+          </li>
+          <li>
+            <a target="_blank" class="grey-text text-lighten-3" href="https://github.com/ElusiveSkies">Casey Twine</a>
+          </li>
+          <li>
+            <a target="_blank" class="grey-text text-lighten-3" href="https://github.com/Zach-EE">Zach Holloway</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">© 2021 Trail<span id="titleR" >r</div>
+  </div>
+</footer>
+
+
+
+  <!-- Linking our script -->
+  <script src="./assets/js/trailer.js"></script>
+
+  <!-- Linking Materialize JS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

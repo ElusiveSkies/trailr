@@ -1,0 +1,174 @@
+/* Used to center searchbar - temporary, just to demonstrate functionality */
+
+:root {
+  --primary-site-color: #004987;
+  --button-color: #00eaff;
+}
+
+#container {
+  justify-content: center;
+  margin-top: 3rem;
+  height: 100vh;
+}
+
+#searchCard {
+  width: 70%;
+  background-color: var(--primary-site-color);
+}
+
+.card-image {
+  height: 100%;
+}
+
+iframe {
+  margin: 0 auto;
+}
+
+body {
+  background-size: cover;
+}
+
+.btn, button {
+  background-color: var(--button-color) !important;
+  color: var(--primary-site-color);
+}
+
+#titleR {
+  color: var(--button-color);
+}
+
+#netflix, #imdb {
+  display: none;
+}
+
+#menuCardRow {
+  margin-left: 2%;
+}
+
+#menuCard {
+  border-radius: 20px;
+}
+
+#sortContainer {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#resultsDiv {
+  margin-left: 3%;
+}
+
+#navbar {
+  height: 80px;
+  background-color: var(--primary-site-color);
+}
+
+#navbarContainer {
+  margin-bottom: 10px;
+}
+
+#posterTitleRow {
+  margin-top: 20px;
+}
+
+#navButtons {
+  margin-left: 2%;
+}
+
+#menuTitle {
+  margin-bottom: 10%;
+}
+
+#movieContainer {
+  padding: 15px;
+  background-color: white;
+}
+
+#trailerContainer {
+  border-bottom: 10px solid black;
+  border-top: 10px solid black;
+}
+
+#rating-card {
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#rating {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#movie-summary {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.names-style {
+  text-shadow: black 1px 0 5px;
+}
+
+.card-action a {
+  margin-right: 0 !important;
+}
+
+#contentRow {
+  margin-top: 5%;
+}
+
+#player {
+  margin-top: 5px;
+}
+
+#plotRow {
+  border-bottom: 10px solid black;
+}
+
+.page-footer {
+  background-color: var(--primary-site-color);
+}
+
+#filterContainer {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#filterByYearSelect {
+  height: 100px;
+}
+
+.row {
+  padding-bottom: 10px;
+}
+
+.custom-sort {
+  background-color: var(--primary-site-color);
+}
+
+ul.dropdown-content.select-dropdown li span {
+  color: var(--primary-site-color);
+}
+
+.select-dropdown {
+  color: white;
+}
+
+.movieTitleEl {
+  font-weight: 500;
+}
+
+.custom-sort {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.activator {
+  height: 100%;
+  width: 100%;
+}

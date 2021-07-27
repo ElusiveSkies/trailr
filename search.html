@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Linking Materialize Icons Library -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- Linking Materialize CSS Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+<!-- Linking custom CSS stylesheet last -->
+<link rel="stylesheet" href="./assets/css/style.css" />
+
+  <title>Search Results</title>
+</head>
+
+<body>
+  <!-- Header Element -->
+  <header class="navbar-fixed">
+    <nav id="navbar">
+      <div class="nav-wrapper valign-wrapper">
+        <a href="./" class="brand-logo center">Trail<span id="titleR">r</a>
+        <ul id="navButtons" class="left hide-on-small-and-down">
+          <li><a href="./index.html">Back Home</a></li>
+
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+  <div class="row" id="contentRow">
+
+    <div class="col l3 m5 s12 center-align" id="menuCardRow">
+      <div class="card large" id="menuCard">
+        <div class="card-content">
+          <div class="card-title">
+            <h5 id="menuTitle">Filter results</h5>
+          </div>
+
+          <div id="filterContainer">
+
+            <div class="row">
+              <div class="col 12 valign-wrapper">
+                <label>
+                <input type="checkbox" class="filled-in" id="filterByRRatedInput" />
+                <span class="filterTitle black-text">Remove R Rated Movies</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <h6>Sort by Year:</h6>
+                <select class="browser-default" id="sortByDateSelector">
+                  <option value="old">Older Movies First</option>
+                  <option value="new">Newer Movies First</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col l8 m6 s12" id="resultsDiv">
+      <!-- Currently dynamically populated by the javascript in search.js -->
+      <div id="results" class="row"></div>
+    </div>
+  </div>
+</main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Trail<span id="titleR">r</h5>
+          <p class="grey-text text-lighten-4">
+            Your next movie hunt starts here!
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Contributors</h5>
+          <ul>
+            <li>
+              <a target="_blank" class="grey-text text-lighten-3" href="https://github.com/WillBerner">Will Berner</a>
+            </li>
+            <li>
+              <a target="_blank" class="grey-text text-lighten-3" href="https://github.com/Muiasar-Al-Ani">Muiasar Al
+                Ani</a>
+            </li>
+            <li>
+              <a target="_blank" class="grey-text text-lighten-3" href="https://github.com/ElusiveSkies">Casey Twine</a>
+            </li>
+            <li>
+              <a target="_blank" class="grey-text text-lighten-3" href="https://github.com/Zach-EE">Zach Holloway</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">© 2021 Trail<span id="titleR" >r</div>
+    </div>
+  </footer>
+
+  <!-- Linking our script -->
+  <script src="./assets/js/search.js"></script>
+
+  <!-- Linking Materialize JS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
